@@ -1,0 +1,18 @@
+CREATE TABLE Sejahtera_Bersama.table_master AS
+SELECT
+    Customers.CustomerEmail as cust_email,
+    Customers.CustomerCity as cust_city,
+    Orders.Date as order_date,
+    Orders.Quantity as order_qty,
+    Products.ProdName_ as product_name,
+    Products.Price_ as product_price,
+    ProductCategory.CategoryName as category_name,
+    (Orders.Quantity * Products.Price_) AS TotalSales
+FROM
+    `Sejahtera_Bersama.Orders` AS Orders
+JOIN
+    `Sejahtera_Bersama.Customers` AS Customers ON Orders.CustomerID = Customers.CustomerID
+JOIN
+    `Sejahtera_Bersama.Products` AS Products ON Orders.ProdNumber = Products.ProdNumber_
+JOIN
+    `Sejahtera_Bersama.ProductCategory` AS ProductCategory ON Products.Category_ = ProductCategory.CategoryID;
