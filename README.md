@@ -1,7 +1,7 @@
 **Case Study**
 
 Sebagai Business Intelligence Analyst PT Sejahtera Bersama, buatlah usulan untuk mempertahankan penjualan ataupun menaikkan penjualan dengan tabel transaksi detail yang sudah ada.
-Sebagai Business Intelligence kami memiliki beberapa tugas yang harus diselesaikan, diantaranya :
+Sebagai Business Intelligence kami memiliki beberapa tugas yang harus diselesaikan, di antaranya:
 1.	Membuat primary key dan membuat entity relationship diagram.
 2.	Membuat table master
 3.	Membuat dashboard kinerja penjualan
